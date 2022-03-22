@@ -1,10 +1,9 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { Top } from './Top'
-import { TopNews } from './TopNews'
-import { GridData } from './GridData'
-import { Recommend } from './Recommend'
-import { styled } from '@mui/material'
+import { Top } from './../components/Top';
+import { TopNews } from './../components/TopNews';
+import { GridData } from './../components/GridData';
+import { NewsDialog } from '../components/NewsDialog';
 
 export const Router = () => {
 
@@ -19,8 +18,8 @@ export const Router = () => {
       <Route path="/grid">
         <GridData />
       </Route>
-      <Route path="/recommend">
-        <Recommend />
+      <Route path="/dialog">
+        <NewsDialog />
       </Route>
     </Switch>
   )

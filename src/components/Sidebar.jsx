@@ -21,7 +21,6 @@ export const Sidebar = (props) => {
     textDecoration: 'none'
   }
 
-
   return (
     <>
       <Drawer
@@ -64,12 +63,12 @@ export const Sidebar = (props) => {
               <ListItemText>GRID</ListItemText>
             </ListItem>
           </Link>
-          <Link to="/recommend" style={linkText}>
+          <Link to="/dialog" style={linkText}>
             <ListItem>
               <ListItemIcon>
                 <RecommendOutlinedIcon />
               </ListItemIcon>
-              <ListItemText>RECOMMEND</ListItemText>
+              <ListItemText>Dialog</ListItemText>
             </ListItem>
           </Link>
         </List>
