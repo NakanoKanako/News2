@@ -19,30 +19,31 @@ export const NewsDialog = () => {
 
   return (
     <>
-      <Grid
-        container
-        justifyContent="center"
-      >
-      <Button sx={{marginTop: '50px'}} variant="contained" onClick={onClickeNewNews}>
+      <Grid container justifyContent="center">
+        <Button
+          sx={{ marginTop: '50px' }}
+          variant="contained"
+          onClick={onClickeNewNews}
+        >
           新規登録
         </Button>
       </Grid>
 
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle sx={{ fontWeight: 'bold' }}>新規ニュース登録</DialogTitle>
+        <DialogTitle sx={{ fontWeight: 'bold' }}>ニュース登録</DialogTitle>
         <DialogContent>
           <DialogContentText>
             <div>
               <Typography>タイトル</Typography>
-              <TextField margin="dense" />
+              <TextField multiline maxRows={2} margin="dense" />
             </div>
             <div>
               <Typography>内容</Typography>
-              <TextField margin="dense" />
+              <TextField multiline rows={5} margin="dense" />
             </div>
             <div>
               <Typography>ジャンル</Typography>
-              <TextField margin="dense" />
+              <TextField  multiline margin="dense" />
             </div>
           </DialogContentText>
         </DialogContent>
